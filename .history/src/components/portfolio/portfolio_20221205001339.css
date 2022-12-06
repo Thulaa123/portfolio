@@ -1,0 +1,7 @@
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+.porfolio__items{
+
+}
