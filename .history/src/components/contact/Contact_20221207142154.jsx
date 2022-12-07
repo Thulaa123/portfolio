@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import './contact.css'
 import {MdOutlineMail} from 'react-icons/md'
 import {BsMessenger} from 'react-icons/bs'
-import {BiChat} from 'react-icons/bi'
+import {BsWhatsapp} from 'react-icons/bs'
 import axios from 'axios'
 
 const Contact = () => {
@@ -65,10 +65,10 @@ const Contact = () => {
             <a href='https://m.me/thulana.vinnath.3'>Send a message</a>
           </article>
           <article className="contact__option">
-            <BiChat className='contact__option-icon'/>
+            <BsWhatsapp className='contact__option-icon'/>
             <h4>Quick Response</h4>
-            <h5>Realtime chat</h5>
-            <a href='https://tawk.to/chat/63905303b0d6371309d307b2/1gjls8i38'>Start chating</a>
+            <h5>+94 76 771 1340</h5>
+            <a href='https://m.me/thulana.vinnath.3'>Send a message</a>
           </article>
         </div>
         <form onSubmit={handleSubmit}>
