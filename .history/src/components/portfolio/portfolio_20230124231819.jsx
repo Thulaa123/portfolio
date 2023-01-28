@@ -18,7 +18,7 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
         {
-          data?.items.map(({collectionId,id,title,demo,image}) => {
+          data.items.map(({collectionId,id,title,demo,image}) => {
             return (
               <article className='portfolio__item'>
                 <div className="portfolio__item-image">

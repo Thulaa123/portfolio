@@ -18,7 +18,8 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
         {
-          data?.items.map(({collectionId,id,title,demo,image}) => {
+          const myObj = JSON.parse(myJSON);
+          data.items[0]?.map(({collectionId,id,title,demo,image}) => {
             return (
               <article className='portfolio__item'>
                 <div className="portfolio__item-image">

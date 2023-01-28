@@ -4,6 +4,7 @@ import useFetch from '../../useFetch'
 
 const Portfolio = () => {
   const {data, loading, error} = useFetch("https://thulana-port.fly.dev/api/collections/portfolio/records");
+  const valuesArray = JSON.parse(data.items);
   if(loading) return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>
@@ -12,13 +13,14 @@ const Portfolio = () => {
     </section>
   )
   if(error) console.log(error);
+  re
   return (
     <section id='portfolio'>
       <h5>My Recent Work</h5>
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
         {
-          data?.items.map(({collectionId,id,title,demo,image}) => {
+          valuesArray?.map(({collectionId,id,title,demo,image}) => {
             return (
               <article className='portfolio__item'>
                 <div className="portfolio__item-image">

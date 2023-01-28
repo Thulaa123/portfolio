@@ -18,11 +18,11 @@ const Portfolio = () => {
       <h2>Portfolio</h2>
       <div className="container portfolio__container">
         {
-          data?.items.map(({collectionId,id,title,demo,image}) => {
+          data?.map(({id,image,title,demo}) => {
             return (
               <article className='portfolio__item'>
                 <div className="portfolio__item-image">
-                  <img src={`https://thulana-port.fly.dev/api/files/${collectionId}/${id}/${image}`} alt={title}></img>
+                  <img src={image.path} alt={title}></img>
                 </div>
                 <h3>{title}</h3>
                 <div className="portfolio__item-cta">
