@@ -6,7 +6,7 @@ const HeaderScrolls = () => {
   return (
     <div className='header__socials'>
         <a href="https://www.linkedin.com/in/thulana-vinnath-288b53202/" target="_blank"><BsLinkedin/></a>
-        <a href="https://github.com/Thulaa123" target="_blank"><FaGithub/></a>
+        <a href="https://linkedin.com/" target="_blank"><FaGithub/></a>
     </div>
   )
 }

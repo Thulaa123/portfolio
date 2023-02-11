@@ -20,7 +20,7 @@ const footer = () => {
         <a href="https://www.facebook.com/thulana.vinnath.3"><FaFacebook/></a>
         <a href="https://www.instagram.com/_.thula.aa._/"><FaInstagram/></a>
         <a href="https://www.linkedin.com/in/thulana-vinnath-288b53202/"><FaLinkedin/></a>
-        <a href="https://github.com/Thulaa123"><FaGithub/></a>
+        <a href="https://www.linkedin.com/in/thulana-vinnath-288b53202/"><FaGithub/></a>
       </div>
       <div className="footer__copyright">
         <small>&copy; Thulana Vinnath, All Rights Reserved.</small>

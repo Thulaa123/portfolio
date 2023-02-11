@@ -3,7 +3,6 @@ import './footer.css'
 import {FaFacebook} from 'react-icons/fa'
 import {FaInstagram} from 'react-icons/fa'
 import {FaLinkedin} from 'react-icons/fa'
-import {FaGithub} from 'react-icons/fa'
 
 const footer = () => {
   return (
@@ -18,9 +17,8 @@ const footer = () => {
       </ul>
       <div className="footer__socials">
         <a href="https://www.facebook.com/thulana.vinnath.3"><FaFacebook/></a>
-        <a href="https://www.instagram.com/_.thula.aa._/"><FaInstagram/></a>
-        <a href="https://www.linkedin.com/in/thulana-vinnath-288b53202/"><FaLinkedin/></a>
-        <a href="https://github.com/Thulaa123"><FaGithub/></a>
+        <a href="#"><FaInstagram/></a>
+        <a href="#"><FaLinkedin/></a>
       </div>
       <div className="footer__copyright">
         <small>&copy; Thulana Vinnath, All Rights Reserved.</small>
