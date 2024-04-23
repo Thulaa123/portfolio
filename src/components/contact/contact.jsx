@@ -54,7 +54,7 @@ const Contact = () => {
           <input type="text" name="name" placeholder='Please Enter your name' required/>
           <input type="email" name="sender_email" placeholder='Please Enter your email' required/>
           <textarea name="message" rows="7" placeholder="Your comment" required ></textarea>
-          <div class="g-recaptcha" data-sitekey="6LfGVMQpAAAAAF3nG9N_Pd1lJKfj_asHfvpr9yiZ"></div>
+          <div class="g-recaptcha" data-sitekey="6Ld3YMQpAAAAANeMuidbu3he57UDxFri6K4syulJ"></div>
           <button type="submit" className='btn btn-primary'>Send Message</button>
         </form>
         <Toaster position="top-center" richColors/>
