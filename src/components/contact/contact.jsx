@@ -1,50 +1,29 @@
-import React, {useState} from 'react'
+import React, { useRef } from 'react'
 import './contact.css'
+import { toast, Toaster } from 'sonner';
+import emailjs from '@emailjs/browser'
 import {MdOutlineMail} from 'react-icons/md'
 import {BsMessenger} from 'react-icons/bs'
 import {BiChat} from 'react-icons/bi'
-import axios from 'axios'
 
 const Contact = () => {
-  const [formStatus, setFormStatus] = useState(false);
-  const [query, setQuery] = useState({
-    name: "",
-    email: "",
-    comment: ""
-  });
-  const handleChange = () => (e) => {
-    const name = e.target.name;
-    const value = e.target.value;
-    setQuery((prevState) => ({
-      ...prevState,
-      [name]: value
-    }));
-  };
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    const formData = new FormData();
-    Object.entries(query).forEach(([key, value]) => {
-      formData.append(key, value);
-    });
+  const form = useRef();
 
-    axios
-      .post(
-        "https://thulana.graffon.lk/api/portfolio/v1/message",
-        formData,
-        { headers: { Accept: "application/json" } }
-      )
-      .then(function (response) {
-        setFormStatus(true);
-        setQuery({
-          name: "",
-          email: "",
-          comment: ""
-        });
-        console.log(response);
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm('service_7bs2g7x', 'template_rnl01pj', form.current, {
+        publicKey: '74MBHL06kIkUmkyZH',
       })
-      .catch(function (error) {
-        console.log(error);
-      });
+      .then(
+        () => {
+          toast.success('I got your response!');
+        },
+        (error) => {
+          toast.error(error.text);
+        },
+      );
   };
   return (
     <section id='contact'>
@@ -71,13 +50,13 @@ const Contact = () => {
             <a href='https://tawk.to/chat/63905303b0d6371309d307b2/1gjls8i38'>Start chating</a>
           </article>
         </div>
-        <form onSubmit={handleSubmit}>
-          {formStatus ? (<h3 className='success'>Your Request has been sent to Thulana! 🎉</h3>) : ("")}
-          <input onChange={handleChange()} id="name" value={query.name} type="text" name='name' placeholder='Please Enter your name' required/>
-          <input onChange={handleChange()} id="email" value={query.email} type="email" name='email' placeholder='Please Enter your email' required/>
-          <textarea onChange={handleChange()} id="comment" value={query.comment} name='comment' rows="7" placeholder="Your comment" required ></textarea>
+        <form ref={form} onSubmit={sendEmail}>
+          <input type="text" name="name" placeholder='Please Enter your name' required/>
+          <input type="email" name="sender_email" placeholder='Please Enter your email' required/>
+          <textarea name="message" rows="7" placeholder="Your comment" required ></textarea>
           <button type="submit" className='btn btn-primary'>Send Message</button>
         </form>
+        <Toaster position="top-center" richColors/>
       </div>
     </section>
   )
