@@ -37,7 +37,7 @@ const About = () => {
             </article>
           </div>
           <p>
-            I’m Thulana, a software engineer at Ceyleon Solutions. Highly motivated individual with a strong foundation in software engineering and programming principles.  An individual with the ability to transform your business requirements into technical solutions. Proficient in Flutter, Javascript, React, HTML, CSS and embedded systems, with an innate ability to learn and master new technologies.. An excited individual to implement and launch new projects
+            I’m Thulana, a full-stack web developer working at Finetech Consultancy - Google Premier Partner. Highly motivated individual with a strong foundation in software engineering and programming principles. An individual with the ability to transform your business requirements into technical solutions. Proficient in Flutter, Javascript, React, HTML, CSS, and embedded systems, with an innate ability to learn and master new technologies... An excited individual ready to implement and launch new projects.
           </p>
           <a href='https://tawk.to/chat/63905303b0d6371309d307b2/1gjls8i38' className='btn btn-primary'>Let's talk</a>
         </div>
