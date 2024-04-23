@@ -18,7 +18,7 @@ const Contact = () => {
       })
       .then(
         () => {
-          toast.success('I got your response!');
+          toast.success('Yay! 🥳, I got your response 🎉 ✉️');
         },
         (error) => {
           toast.error(error.text);
