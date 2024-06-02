@@ -1,12 +1,12 @@
 import React from 'react'
-import MagicButton from './ui/MagicButton'
+import MagicButton from './MagicButton'
 import { IoMdMail } from 'react-icons/io'
 import { socialMedia } from '@/data'
 import { SiFacebook, SiGithub, SiInstagram } from 'react-icons/si'
 
 const Footer = () => {
     return (
-        <footer className='w-full pb-10 mb-[100px] md:mb-5' id="contact">
+        <footer className='w-full pb-10 mb-[100px] md:mb-5 pt-5' id="contact">
             <div className='flex flex-col items-center'>
                 <h1 className='heading lg:max-w-[45vw]'>Let&apos;s do something amazing !</h1>
                 <p className='text-white-200 md:mt-10 my-5 text-center'>Just reach me will have discussion to get the idea a reality ✨</p>
