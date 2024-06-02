@@ -10,6 +10,8 @@ import animationData from "@/data/confetti.json";
 import MagicButton from "./MagicButton";import { IconContainer } from "./IconContainer";
 import { SiAngular, SiDocker, SiFlutter, SiGithub, SiGooglecloud, SiLaravel, SiNextdotjs, SiOctobercms, SiReact } from "react-icons/si";
 import { Radar } from "./Redar";
+import { FiDownloadCloud } from "react-icons/fi";
+import { TextGenerateEffect } from "./TextGenarateEffect";
 ;
 
 export const BentoGrid = ({
@@ -67,9 +69,6 @@ export const BentoGridItem = ({
         setCopied(true);
     };
 
-    const leftLists = ["ReactJS", "Laravel", "Typescript", "Flutter"];
-    const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
-
     return (
         <div
             className={cn(
@@ -82,7 +81,7 @@ export const BentoGridItem = ({
             }}
         >
             <div className={`${id === 6  && 'flex justify-center' } 'h-full'`}>
-                <div className="w-full h-full absolute">
+                <div className={`w-full h-full absolute`}>
                     {img && (
                         <img src={img} alt={img} className={cn(imgClassName,'object-cover object-center')}/>
                     )}
@@ -99,11 +98,11 @@ export const BentoGridItem = ({
                 )}
                 <div className={cn(titleClassName,`${id !== 3 ? 'group-hover/bento:translate-x-2 px-5 p-5 lg:p-10' : ''}`, "transition duration-200 relative md:h-full min-h-40 flex flex-col")}>
                     {id !== 1 && id !== 3 && (
-                        <div className="font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+                        <div className="font-extralight md:max-w-full md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
                             {description}
                         </div>
                     )}
-                    {id !== 3 && (
+                    {id !== 3 && id !== 5 && (
                         <div className={`${id === 1 && 'rounded-lg bg-black-100 border border-white/[0.1] p-4 text-4xl sm:text-right lg:text-center'} 'text-lg lg:text-3xl w-full font-bold z-10' `} >
                             {title}
                         </div>
@@ -133,7 +132,7 @@ export const BentoGridItem = ({
                             <div className="mx-auto w-full max-w-md">
                                 <div className="flex w-full items-center justify-center space-x-10 md:justify-between md:space-x-0 ">
                                     <IconContainer
-                                    text="Angular JS"
+                                    text="Angular"
                                     delay={0.5}
                                     icon={<SiAngular className=" h-8 w-8 text-slate-600" />}
                                     />
@@ -191,6 +190,26 @@ export const BentoGridItem = ({
                             otherClasses="!bg-[#161A31]"
                         />
                         </div>
+                    )}
+
+                    {id === 5 && (
+                        <TextGenerateEffect
+                            words="Full-stack developer 👨‍💻 passionate about coding challenges 💡, contributing to open-source projects 🌟, and fostering tech innovation through community initiatives 🌐. Let's build something amazing 💻✨"
+                            className="text-center text-[40px] md:text-5xl lg:text-6xl"
+                        />
+                        // <div className={`'text-lg lg:text-3xl w-full font-bold z-10'`} >
+                        //     {title}
+                        // </div>
+                    )}
+
+                    {id === 4 && (
+                        <a href="#about">
+                            <MagicButton
+                            title="Download CV"
+                            icon={<FiDownloadCloud />}
+                            position="left"
+                            />
+                        </a>
                     )}
                 </div>
             </div>

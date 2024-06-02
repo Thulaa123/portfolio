@@ -18,7 +18,7 @@ export const navItems = [
     },
     {
       id: 2,
-      title: "I'm very flexible with time zone communications",
+      title: "Three JS make this globe spin 🚀",
       description: "",
       className: "lg:col-span-2 md:col-span-3 md:row-span-2",
       imgClassName: "",
@@ -38,8 +38,8 @@ export const navItems = [
     },
     {
       id: 4,
-      title: "Tech enthusiast with a passion for development.",
-      description: "",
+      title: "",
+      description: "Explore my talents",
       className: "lg:col-span-2 md:col-span-3 md:row-span-1",
       imgClassName: "",
       titleClassName: "justify-start",
@@ -50,7 +50,7 @@ export const navItems = [
     {
       id: 5,
       title: "Currently building a JS Animation library",
-      description: "The Inside Scoop",
+      description: "",
       className: "md:col-span-3 md:row-span-2",
       imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
       titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -173,45 +173,38 @@ export const navItems = [
   export const workExperience = [
     {
       id: 1,
-      title: "Frontend Engineer Intern",
-      desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+      title: "Software Developer Intern",
+      desc: "I worked as a web developer intern for a software start up called Ceyleon for 6 months",
       className: "md:col-span-2",
-      thumbnail: "/exp1.svg",
+      thumbnail: "/ceyleon_logo.png",
     },
     {
       id: 2,
-      title: "Mobile App Dev - JSM Tech",
-      desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+      title: "Software Developer",
+      desc: "I worked as a web developer for a came company called Ceyleon for 1½ years",
       className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp2.svg",
+      thumbnail: "/ceyleon_logo.png",
     },
     {
       id: 3,
-      title: "Freelance App Dev Project",
-      desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+      title: "Software developer",
+      desc: "Currently working for a Google Cloud partner located in Sri Lanka",
       className: "md:col-span-2", // change to md:col-span-2
-      thumbnail: "/exp3.svg",
-    },
-    {
-      id: 4,
-      title: "Lead Frontend Developer",
-      desc: "Developed and maintained user-facing features using modern frontend technologies.",
-      className: "md:col-span-2",
-      thumbnail: "/exp4.svg",
+      thumbnail: "/gcp-l.png",
     },
   ];
   
   export const socialMedia = [
     {
       id: 1,
-      img: "/git.svg",
+      iconName: "/git.svg",
     },
     {
       id: 2,
-      img: "/twit.svg",
+      iconName: "/twit.svg",
     },
     {
       id: 3,
-      img: "/link.svg",
+      iconName: "/link.svg",
     },
   ];
