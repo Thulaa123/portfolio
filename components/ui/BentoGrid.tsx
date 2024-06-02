@@ -203,7 +203,7 @@ export const BentoGridItem = ({
                     )}
 
                     {id === 4 && (
-                        <a href="#about">
+                        <a href="https://drive.google.com/file/d/1WazaSkyZKNeZf-vuIWTlQtx911j61VTk/view?usp=sharing">
                             <MagicButton
                             title="Download CV"
                             icon={<FiDownloadCloud />}
