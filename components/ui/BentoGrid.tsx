@@ -97,7 +97,7 @@ export const BentoGridItem = ({
                         <div className="absolute z-50 flex items-center justify-center text-white font-bold"/>
                     </BackgroundGradientAnimation>
                 )}
-                <div className={cn(titleClassName,`${id !== 3 ? 'group-hover/bento:translate-x-2 px-5 p-5 lg:p-10' : ''}`, "transition duration-200 relative md:h-full min-h-40 flex flex-col")}>
+                <div className={cn(titleClassName,`${id !== 3 ? 'px-5 p-5 lg:p-10' : ''}`, "transition duration-200 relative md:h-full min-h-40 flex flex-col")}>
                     {id !== 1 && id !== 3 && (
                         <div className="font-extralight md:max-w-full md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
                             {description}
@@ -188,7 +188,6 @@ export const BentoGridItem = ({
                             icon={<IoCopyOutline />}
                             position="left"
                             handleClick={handleCopy}
-                            otherClasses="!bg-[#161A31]"
                         />
                         </div>
                     )}
